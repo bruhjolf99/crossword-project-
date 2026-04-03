@@ -1,0 +1,989 @@
+<!DOCTYPE html>
+<html lang="ms">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Teka Silang Kata Nilai Murni</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+  <div class="app-container">
+
+    <!-- LANDING PAGE -->
+    <div id="landingPage" class="landing-page">
+      <div class="landing-content">
+
+        <!-- TOP DECO -->
+        <div class="landing-deco-top">
+          <svg width="160" height="40" viewBox="0 0 160 40">
+            <path d="M10 25 Q40 5 70 22 Q100 38 130 18 Q145 10 155 20" stroke="#667eea" stroke-width="2" fill="none" opacity="0.35"/>
+            <path d="M20 32 L28 14 L36 30 L44 12 L52 28" stroke="#764ba2" stroke-width="1.5" fill="none" opacity="0.2"/>
+          </svg>
+        </div>
+
+        <!-- TITLE BLOCK -->
+        <div class="landing-title-block">
+          <div class="landing-label" id="landingLabel">Pendidikan Moral Tahun 5</div>
+          <h1 class="landing-title">Teka Silang Kata <span>Nilai Murni</span></h1>
+          <p class="landing-subtitle" id="landingSubtitle">Selamat Datang</p>
+        </div>
+
+        <!-- TRIVIA SECTION -->
+        <div class="landing-trivia-section">
+          <div class="landing-trivia-header">
+            <span class="landing-trivia-tag" id="landingTriviaTag">📖📖📖📖📖📖📖</span>
+            <span class="landing-trivia-sub" id="landingTriviaSub">Klik untuk kembangkan</span>
+          </div>
+          <div class="landing-trivia-list">
+
+            <div class="trivia-item">
+              <button class="trivia-toggle" aria-expanded="false">
+                <span class="trivia-toggle-label">Apakah maksud sikap hormat?</span>
+                <span class="trivia-toggle-icon">▶</span>
+              </button>
+              <div class="trivia-body">
+                <p>Sikap hormat adalah sikap yang menunjukkan penghargaan, keadilan, pengertian, dan perhatian terhadap orang lain. Sikap ini melibatkan rasa menghormati hak, pendapat, dan perasaan orang lain tanpa memandang perbezaan sosial, agama, suku, atau jantina.</p>
+              </div>
+            </div>
+
+            <div class="trivia-item">
+              <button class="trivia-toggle" aria-expanded="false">
+                <span class="trivia-toggle-label">Kenapa bersikap hormat penting?</span>
+                <span class="trivia-toggle-icon">▶</span>
+              </button>
+              <div class="trivia-body">
+                <p>Rasa hormat itu penting untuk membangunkan kepercayaan, pengertian, dan hubungan positif dengan orang lain. Jika kita hormat orang lain, mereka akan lebih berasa dihargai sehinggalah dapat memupuk nilai lain seperti kerja sama, berkolaborasi, dan saling bantu-membantu.</p>
+              </div>
+            </div>
+
+            <div class="trivia-item">
+              <button class="trivia-toggle" aria-expanded="false">
+                <span class="trivia-toggle-label">Siapakah yang anda perlu hormati?</span>
+                <span class="trivia-toggle-icon">▶</span>
+              </button>
+              <div class="trivia-body">
+                <p>Ibu bapa, adik-beradik, rakan-rakan, ahli-ahli keluarga lain, orang-orang dewasa, warga tua, guru-guru dan ramai lagi. Di samping itu, kita juga harus menghormati tradisi, bangsa dan agama orang lain.</p>
+              </div>
+            </div>
+
+            <div class="trivia-item">
+              <button class="trivia-toggle" aria-expanded="false">
+                <span class="trivia-toggle-label">Sikap hormat itu juga bersifat universal.</span>
+                <span class="trivia-toggle-icon">▶</span>
+              </button>
+              <div class="trivia-body">
+                <p>Kita juga perlu menjaga kesopanan dan tata tertib semasa melawati pelbagai tempat. Termasuklah semasa menghadiri kebanyakan aktiviti dan acara.</p>
+              </div>
+            </div>
+
+            <div class="trivia-item">
+              <button class="trivia-toggle" aria-expanded="false">
+                <span class="trivia-toggle-label">Bagaimanakah anda menunjukkan sikap hormat?</span>
+                <span class="trivia-toggle-icon">▶</span>
+              </button>
+              <div class="trivia-body">
+                <p>Hal ini dapat diwujudkan melalui bahasa tubuh yang positif, tutur kata yang baik, dan kesediaan untuk mendengarkan dengan penuh perhatian. Sebagai contoh, anda harus sentiasa menjaga cara pemakaian anda di tempat-tempat awam.</p>
+              </div>
+            </div>
+
+          </div>
+        </div>
+
+        <!-- START BUTTON -->
+        <div class="landing-actions">
+          <button id="landingStartBtn" class="landing-start-btn">
+            <span id="landingStartLabel">Mula</span>
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none">
+              <path d="M9 6l6 6-6 6" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>
+          </button>
+          <p class="landing-hint" id="landingHint">Tekan Mula untuk ke Menu Utama</p>
+        </div>
+
+        <!-- BOTTOM DECO -->
+        <div class="landing-deco-bottom">
+          <svg width="200" height="20" viewBox="0 0 200 20">
+            <line x1="0" y1="10" x2="200" y2="10" stroke="#667eea" stroke-width="1" opacity="0.2"/>
+            <circle cx="100" cy="10" r="3" fill="#667eea" opacity="0.3"/>
+            <circle cx="86" cy="10" r="2" fill="#764ba2" opacity="0.2"/>
+            <circle cx="114" cy="10" r="2" fill="#764ba2" opacity="0.2"/>
+          </svg>
+          <p class="landing-credit">BIT Final Year Project · 2026</p>
+        </div>
+
+      </div>
+    </div>
+
+    <!-- MAIN MENU -->
+    <div id="mainMenu" class="main-menu-overlay">
+      <div class="modal-content main-menu">
+        <div class="menu-header">
+          <h1>Teka Silang Kata Nilai Murni</h1>
+          <p>Sertai kami dalam mencari nilai-nilai murni</p>
+        </div>
+        <div class="menu-body">
+          <div class="continue-row" id="continueRow">
+            <button id="continueBtn" class="btn btn-primary btn-large continue-btn">Continue</button>
+            <button id="deleteSaveBtn" class="delete-save-btn" title="Delete save">
+              🗑️
+              <span class="delete-save-tooltip">Delete save</span>
+            </button>
+          </div>
+          <button id="quickplayBtn" class="btn btn-primary btn-large">Quickplay</button>
+          <button id="playBtn" class="btn btn-primary btn-large">Play</button>
+          <div class="menu-divider"></div>
+          <button id="settingsMenuBtn" class="btn btn-secondary btn-large">Settings</button>
+          <button id="scoreboardBtn" class="btn btn-secondary btn-large">Scoreboard</button>
+          <button id="tutorialBtn" class="btn btn-secondary btn-large">Tutorial</button>
+          <button id="quitMenuBtn" class="btn btn-danger btn-large">Quit</button>
+        </div>
+      </div>
+    </div>
+
+    <!-- TETAPAN SCREEN -->
+    <div id="tetapanScreen" style="display:none;" class="settings-screen">
+      <header class="settings-header">
+        <div class="settings-header-back">
+          <div class="icon-btn-wrapper">
+            <button id="tetapanBackBtn" class="icon-btn" aria-label="Back">
+              <svg width="22" height="22" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M15 18L9 12L15 6" stroke="#333" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+                </svg>
+            </button>
+            <span class="icon-btn-tooltip">Back</span>
+          </div>
+        </div>
+        <h1>Settings</h1>
+        <p id="tetapanSubtitle">Configure display and app preferences</p>
+      </header>
+      <main class="settings-content">
+        <div id="tetapanNonDefaultBanner" class="settings-banner">
+          ⚠️ You have saved settings that differ from defaults.
+          <button id="tetapanBannerRestoreBtn" class="btn-link-primary">Restore defaults</button>
+        </div>
+        <div class="settings-container">
+
+          <div class="settings-section">
+            <h3 id="tetapanDisplayHeader">Display</h3>
+            <div class="setting-group">
+              <label class="toggle-label">
+                <span id="lblShowBlocked"><span id="tetLblBlocked">Show black boxes</span></span>
+                <input type="checkbox" id="showBlockedCells" class="toggle-input">
+                <span class="toggle-track"><span class="toggle-thumb"></span></span>
+              </label>
+              <p class="settings-note" id="noteShowBlocked"><span id="tetDescBlocked">Show black boxes in the grid. Turn off for a cleaner look.</span></p>
+            </div>
+            <div class="setting-group">
+              <label class="toggle-label">
+                <span id="lblShowBorders"><span id="tetLblBorders">Show cell borders</span></span>
+                <input type="checkbox" id="showCellBorders" checked class="toggle-input">
+                <span class="toggle-track"><span class="toggle-thumb"></span></span>
+              </label>
+              <p class="settings-note" id="noteShowBorders"><span id="tetDescBorders">Show borders on typeable cells.</span></p>
+            </div>
+            <div class="setting-group">
+              <label id="lblCellSize"><span id="tetLblCellSize">Cell size:</span></label>
+              <div class="version-buttons">
+                <button class="version-btn" id="cellSizeSmall"><span class="version-label">Small</span><span class="version-desc">32px</span></button>
+                <button class="version-btn active" id="cellSizeNormal"><span class="version-label">Normal</span><span class="version-desc">40px</span></button>
+                <button class="version-btn" id="cellSizeLarge"><span class="version-label">Large</span><span class="version-desc">50px</span></button>
+              </div>
+            </div>
+            <div class="setting-group">
+              <label class="toggle-label">
+                <span id="lblReduceAnim"><span id="tetLblReduceAnim">Reduce animations</span></span>
+                <input type="checkbox" id="reduceAnimations" class="toggle-input">
+                <span class="toggle-track"><span class="toggle-thumb"></span></span>
+              </label>
+            </div>
+          </div>
+
+          <div class="settings-section">
+            <h3 id="tetapanAccessHeader"><span id="tetAccessHeader">Accessibility</span></h3>
+            <div class="setting-group">
+              <label class="toggle-label">
+                <span id="lblHighContrast"><span id="tetLblHighContrast">High contrast</span></span>
+                <input type="checkbox" id="highContrast" class="toggle-input">
+                <span class="toggle-track"><span class="toggle-thumb"></span></span>
+              </label>
+            </div>
+            <div class="setting-group">
+              <label class="toggle-label">
+                <span id="lblLargeClue"><span id="tetLblLargeClue">Large clue text</span></span>
+                <input type="checkbox" id="largeClueText" class="toggle-input">
+                <span class="toggle-track"><span class="toggle-thumb"></span></span>
+              </label>
+            </div>
+            <div class="setting-group">
+              <label class="toggle-label">
+                <span id="lblDarkMode"><span id="tetLblDarkMode">Dark Mode</span></span>
+                <input type="checkbox" id="darkMode" class="toggle-input">
+                <span class="toggle-track"><span class="toggle-thumb"></span></span>
+              </label>
+            </div>
+          </div>
+
+          <div class="settings-section">
+            <h3><span id="tetLangHeader">Language / Bahasa</span></h3>
+            <div class="setting-group">
+              <div class="version-buttons">
+                <button class="version-btn active" id="langEN"><span class="version-label">English</span><span class="version-desc">Default</span></button>
+                <button class="version-btn" id="langBM"><span class="version-label">Bahasa Melayu</span><span class="version-desc">BM</span></button>
+              </div>
+            </div>
+          </div>
+
+        </div>
+
+        <!-- BOTTOM ACTION BAR -->
+        <div class="tetapan-actions">
+          <div class="tetapan-actions-left">
+            <button id="tetapanCancelBtn" class="btn btn-danger">← Cancel</button>
+            <button id="resetAllDataBtn" class="btn-link-danger"><span id="resetAllDataLabel">Reset all data</span></button>
+          </div>
+          <div class="tetapan-actions-right">
+            <button id="tetapanRestoreBtn" class="btn btn-secondary">Restore Default</button>
+            <button id="tetapanSaveBtn" class="btn btn-secondary" disabled>Save Settings</button>
+          </div>
+        </div>
+
+      </main>
+    </div>
+
+    <!-- TETAPAN RESTORE CONFIRM MODAL -->
+  <div id="tetapanRestoreModal" style="display:none;" class="modal-overlay">
+    <div class="modal-content confirm-modal">
+      <button class="modal-close-btn" id="closeTetapanRestoreModal">&#x2715;</button>
+      <h2 class="modal-title" id="tetapanRestoreModalTitle">Restore Defaults?</h2>
+      <p id="tetapanRestoreModalBody">You have previously saved changes. Restore all settings to default?</p>
+      <div class="confirm-actions">
+        <button id="tetapanRestoreConfirm" class="btn btn-primary">Yes, Restore</button>
+        <button id="tetapanRestoreNo" class="btn btn-secondary">No</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- SAVE CONFIRM POPUP -->
+    <div id="tetapanSaveModal" style="display:none;" class="modal-overlay">
+      <div class="modal-content confirm-modal">
+        <button class="modal-close-btn" id="closeTetapanSaveModal">&#x2715;</button>
+        <h2 class="modal-title" id="tetapanSaveTitle">Save Settings?</h2>
+        <p id="tetapanSaveDesc">There are changes made. Continue?</p>
+        <div class="tetapan-save-countdown" id="tetapanSaveCountdown"></div>
+        <div class="confirm-actions">
+          <button id="tetapanSaveAccept" class="btn btn-primary">Accept</button>
+        </div>
+      </div>
+    </div>
+
+    <!-- CANCEL WITH CHANGES POPUP -->
+    <div id="tetapanCancelModal" style="display:none;" class="modal-overlay">
+      <div class="modal-content confirm-modal">
+        <button class="modal-close-btn" id="closeTetapanCancelModal">&#x2715;</button>
+        <h2 class="modal-title">Back</h2>
+        <p id="tetapanCancelDesc">Backing out now with changes. Save or not?</p>
+        <div class="confirm-actions">
+          <button id="tetapanCancelSave" class="btn btn-primary">Save</button>
+          <button id="tetapanCancelDiscard" class="btn btn-secondary">Don't Save</button>
+        </div>
+      </div>
+    </div>
+
+    <!-- MODIFIER SETTINGS PAGE -->
+    <div id="modifierSettings" class="settings-screen" style="display: none;">
+      <header class="settings-header">
+        <div class="settings-header-back">
+          <div class="icon-btn-wrapper">
+            <button id="modifierBackBtn" class="icon-btn" aria-label="Back">
+              <svg width="22" height="22" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M15 18L9 12L15 6" stroke="#333" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+                </svg>
+            </button>
+            <span class="icon-btn-tooltip">Back</span>
+          </div>
+        </div>
+        <h1 id="modifierTitle">Game Settings</h1>
+        <p id="modifierSubtitle">Configure your game preferences</p>
+      </header>
+      <main class="settings-content">
+        <div id="modifierNonDefaultBanner" class="settings-banner">
+          ⚠️ You have saved settings that differ from defaults.
+          <button id="modifierBannerRestoreBtn" class="btn-link-primary">Restore defaults</button>
+        </div>
+        <div class="settings-container">
+
+          <!-- GAME VERSION SECTION -->
+          <div class="settings-section">
+            <h3><span id="modLblGameMode">Game Mode</span></h3>
+            <div class="setting-group">
+              <label><span id="modDescGameMode">Select game mode:</span></label>
+              <div class="version-buttons">
+                <button id="versionV1Btn" class="version-btn active" data-version="1">
+                  <span class="version-label">Version 1</span>
+                  <span class="version-desc">8 lives &bull; Score only</span>
+                </button>
+                <button id="versionV2Btn" class="version-btn" data-version="2">
+                  <span class="version-label">Version 2</span>
+                  <span class="version-desc">5 lives &bull; Win / Lose</span>
+                </button>
+              </div>
+            </div>
+            <div class="setting-group">
+              <p class="settings-note">
+                <strong>Version 1:</strong> 8 lives. Reset clears wrong/empty cells only. Final score shown on submit.<br>
+                <strong>Version 2:</strong> 5 lives. Win/lose determined by correct vs wrong words.
+              </p>
+            </div>
+          </div>
+
+          <!-- TIMER SECTION -->
+          <div class="settings-section">
+            <h3><span id="modLblTimer">Timer</span></h3>
+            <div class="setting-group">
+              <label>
+                <input type="checkbox" id="timerEnabled" checked>
+                Gunakan Pemasa
+              </label>
+            </div>
+            <div class="setting-group" id="timerOptions">
+              <label><span id="modDescTimer">Select Duration:</span></label>
+              <div class="preset-buttons">
+                <button class="preset-btn" data-time="5">5 min</button>
+                <button class="preset-btn" data-time="10">10 min</button>
+                <button class="preset-btn" data-time="15">15 min</button>
+                <button class="preset-btn" data-time="30">30 min</button>
+                <button class="preset-btn active" data-time="60">60 min</button>
+              </div>
+              <label>Custom Time (minutes):</label>
+              <div class="custom-time-input">
+                <input type="number" id="customTime" min="1" max="180" value="60" placeholder="Enter minutes">
+                <span id="customTimeDisplay">60</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- HINTS SECTION -->
+          <div class="settings-section">
+            <h3><span id="modLblHints">Hints</span></h3>
+            <div class="setting-group">
+              <label><span id="modDescHints">Select hint mode:</span></label>
+              <div class="version-buttons">
+                <button id="hints-fixed" class="version-btn active">
+                  <span class="version-label">Tetap</span>
+                  <span class="version-desc">Same hints every time</span>
+                </button>
+                <button id="hints-random" class="version-btn">
+                  <span class="version-label">Random 🎲</span>
+                  <span class="version-desc">Hints generated randomly</span>
+                </button>
+                <button id="hints-off" class="version-btn">
+                  <span class="version-label">None</span>
+                  <span class="version-desc">No hints</span>
+                </button>
+              </div>
+            </div>
+            <div class="setting-group">
+              <p class="settings-note">
+                <strong>Fixed:</strong> Default Version 1. Certain letters are set as hints.<br>
+                <strong>Rawak 🎲:</strong> Default Version 2. Hints generated randomly. V1: 5 rerolls, V2: 3.<br>
+                <strong>None:</strong> No hints given.
+              </p>
+            </div>
+          </div>
+
+          <!-- SCORING SECTION -->
+          <div class="settings-section">
+            <h3>Sistem Skor</h3>
+            <div class="setting-group">
+              <label>
+                <input type="checkbox" id="scoringEnabled" checked>
+                Aktifkan Skor
+              </label>
+            </div>
+            <div class="setting-group" id="scoringOptions">
+              <p id="scoringDesc" style="font-size: 0.9em; color: #666;">
+                Skor dikira berdasarkan perkataan penuh yang betul. Setiap teka silang kata bernilai 100 mata.
+              </p>
+            </div>
+          </div>
+
+        </div>
+        <div class="settings-actions modifier-actions">
+          <button id="modifierCancelBtn" class="icon-btn-back-label">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M15 18L9 12L15 6" stroke="white" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>
+            <span>Cancel</span>
+          </button>
+          <button id="resetToDefaultBtn" class="btn btn-secondary">Reset to Default</button>
+          <button id="proceedToLauncherBtn" class="btn btn-primary btn-large">Next →</button>
+        </div>
+      </main>
+    </div>
+
+    <!-- LAUNCHER PAGE -->
+    <div id="launcher" class="launcher-screen" style="display: none;">
+      <header class="launcher-header">
+        <h1>Teka Silang Kata Nilai Murni</h1>
+        <p class="subtitle">Sertai kami dalam mencari nilai-nilai murni</p>
+
+        <!-- 3-zone control bar -->
+        <div class="launcher-bar">
+          <!-- LEFT: home + settings -->
+          <div class="launcher-bar-left">
+            <div class="icon-btn-wrapper">
+              <button id="homeBtn" class="icon-btn" aria-label="Home">
+                <svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M2 8L9 2L16 8V16H12V11H6V16H2V8Z" stroke="currentColor" stroke-width="1.5" stroke-linejoin="round" fill="none"/>
+                </svg>
+              </button>
+              <span class="icon-btn-tooltip">Home</span>
+            </div>
+            <div class="icon-btn-wrapper">
+              <button id="launcherSettingsBtn" class="icon-btn" aria-label="Settings">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M12 15a3 3 0 1 0 0-6 3 3 0 0 0 0 6Z" stroke="currentColor" stroke-width="1.5" fill="none"/>
+                <path d="M19.4 15a1.65 1.65 0 0 0 .33 1.82l.06.06a2 2 0 1 1-2.83 2.83l-.06-.06a1.65 1.65 0 0 0-1.82-.33 1.65 1.65 0 0 0-1 1.51V21a2 2 0 0 1-4 0v-.09A1.65 1.65 0 0 0 9 19.4a1.65 1.65 0 0 0-1.82.33l-.06.06a2 2 0 1 1-2.83-2.83l.06-.06A1.65 1.65 0 0 0 4.68 15a1.65 1.65 0 0 0-1.51-1H3a2 2 0 0 1 0-4h.09A1.65 1.65 0 0 0 4.6 9a1.65 1.65 0 0 0-.33-1.82l-.06-.06a2 2 0 1 1 2.83-2.83l.06.06A1.65 1.65 0 0 0 9 4.68a1.65 1.65 0 0 0 1-1.51V3a2 2 0 0 1 4 0v.09a1.65 1.65 0 0 0 1 1.51 1.65 1.65 0 0 0 1.82-.33l.06-.06a2 2 0 1 1 2.83 2.83l-.06.06A1.65 1.65 0 0 0 19.4 9a1.65 1.65 0 0 0 1.51 1H21a2 2 0 0 1 0 4h-.09a1.65 1.65 0 0 0-1.51 1Z" stroke="currentColor" stroke-width="1.5" fill="none"/>
+              </svg>
+              </button>
+              <span class="icon-btn-tooltip">Settings</span>
+            </div>
+          </div>
+
+          <!-- CENTER: timer + lives -->
+          <div class="launcher-bar-center">
+            <div class="launcher-status-item">
+              <span class="launcher-status-icon">⏱️</span>
+              <span id="launcherTimerText">--:--</span>
+            </div>
+            <div class="launcher-status-divider"></div>
+            <div class="launcher-status-item">
+              <span class="launcher-status-icon">❤️</span>
+              <span id="launcherLivesText">-- / --</span>
+            </div>
+          </div>
+
+          <!-- RIGHT: submit -->
+          <div class="launcher-bar-right">
+            <div class="icon-btn-wrapper">
+              <button id="finalizeBtn" class="icon-btn icon-btn--submit btn-disabled-soft" aria-label="Submit All">
+                <span class="icon-btn-icon">📤</span>
+                <span class="icon-btn-label">Submit All</span>
+              </button>
+            </div>
+          </div>
+        </div>
+      </header>
+
+      <main class="launcher-content">
+        <h2><span id="launcherSelectTitle">Select Difficulty</span></h2>
+        <div class="puzzle-grid">
+          <button class="puzzle-card" data-puzzle="EASY1">
+            <div class="puzzle-icon">🟢</div>
+            <h3>Easy Mode 1</h3>
+            <p>Mudah</p>
+            <span class="puzzle-card-status"></span>
+          </button>
+          <button class="puzzle-card" data-puzzle="MEDIUM1">
+            <div class="puzzle-icon">🟡</div>
+            <h3>Medium Mode 1</h3>
+            <p>Sederhana</p>
+            <span class="puzzle-card-status"></span>
+          </button>
+          <button class="puzzle-card" data-puzzle="MEDIUM2">
+            <div class="puzzle-icon">🟡</div>
+            <h3>Medium Mode 2</h3>
+            <p>Sederhana</p>
+            <span class="puzzle-card-status"></span>
+          </button>
+          <button class="puzzle-card" data-puzzle="HM1">
+            <div class="puzzle-icon">🔴</div>
+            <h3>Hard Mode 1</h3>
+            <p>Sangat Sukar</p>
+            <span class="puzzle-card-status"></span>
+          </button>
+          <button class="puzzle-card" data-puzzle="HM2">
+            <div class="puzzle-icon">🔴</div>
+            <h3>Hard Mode 2</h3>
+            <p>Sangat Sukar</p>
+            <span class="puzzle-card-status"></span>
+          </button>
+          <button class="puzzle-card" data-puzzle="HM3">
+            <div class="puzzle-icon">🔴</div>
+            <h3>Hard Mode 3</h3>
+            <p>Sangat Sukar</p>
+            <span class="puzzle-card-status"></span>
+          </button>
+        </div>
+      </main>
+    </div>
+
+    <!-- GAME SCREEN -->
+    <div id="game-screen" class="game-screen" style="display: none;">
+      <header>
+        <h1>Teka Silang Kata Nilai Murni</h1>
+        <p class="subtitle">Sertai kami dalam mencari nilai-nilai murni</p>
+
+        <!-- 3-zone game bar -->
+        <div class="game-bar">
+          <!-- LEFT: back icon -->
+          <div class="game-bar-left">
+            <div class="icon-btn-wrapper">
+              <button id="backToLauncher" class="icon-btn" aria-label="Balik">
+                <svg width="22" height="22" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M15 18L9 12L15 6" stroke="#333" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+                </svg>
+              </button>
+              <span class="icon-btn-tooltip">Balik</span>
+            </div>
+          </div>
+
+          <!-- CENTER: timer + lives -->
+          <div class="game-bar-center">
+            <div id="timerDisplay" class="timer-display">00:00</div>
+            <div id="livesDisplay" class="lives-display"></div>
+          </div>
+
+          <!-- RIGHT: settings -->
+          <div class="game-bar-right">
+            <div class="icon-btn-wrapper">
+              <button id="gameSettingsBtn" class="icon-btn" aria-label="Settings">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M12 15a3 3 0 1 0 0-6 3 3 0 0 0 0 6Z" stroke="currentColor" stroke-width="1.5" fill="none"/>
+                <path d="M19.4 15a1.65 1.65 0 0 0 .33 1.82l.06.06a2 2 0 1 1-2.83 2.83l-.06-.06a1.65 1.65 0 0 0-1.82-.33 1.65 1.65 0 0 0-1 1.51V21a2 2 0 0 1-4 0v-.09A1.65 1.65 0 0 0 9 19.4a1.65 1.65 0 0 0-1.82.33l-.06.06a2 2 0 1 1-2.83-2.83l.06-.06A1.65 1.65 0 0 0 4.68 15a1.65 1.65 0 0 0-1.51-1H3a2 2 0 0 1 0-4h.09A1.65 1.65 0 0 0 4.6 9a1.65 1.65 0 0 0-.33-1.82l-.06-.06a2 2 0 1 1 2.83-2.83l.06.06A1.65 1.65 0 0 0 9 4.68a1.65 1.65 0 0 0 1-1.51V3a2 2 0 0 1 4 0v.09a1.65 1.65 0 0 0 1 1.51 1.65 1.65 0 0 0 1.82-.33l.06-.06a2 2 0 1 1 2.83 2.83l-.06.06A1.65 1.65 0 0 0 19.4 9a1.65 1.65 0 0 0 1.51 1H21a2 2 0 0 1 0 4h-.09a1.65 1.65 0 0 0-1.51 1Z" stroke="currentColor" stroke-width="1.5" fill="none"/>
+              </svg>
+              </button>
+              <span class="icon-btn-tooltip">Settings</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Dropdown row — centered below bar -->
+        <div class="puzzle-selector">
+          <label for="puzzleSelect"><span id="switchCrosswordLabel">Switch Crossword:</span></label>
+          <select id="puzzleSelect">
+            <option value="EASY1">Easy Mode 1</option>
+            <option value="MEDIUM1">Medium Mode 1</option>
+            <option value="MEDIUM2">Medium Mode 2</option>
+            <option value="HM1">Hard Mode 1</option>
+            <option value="HM2">Hard Mode 2</option>
+            <option value="HM3">Hard Mode 3</option>
+          </select>
+        </div>
+      </header>
+
+      <main class="main-content">
+        <section class="grid-section">
+          <table id="crossword" class="grid"></table>
+          <div class="controls">
+            <button id="checkBtn" class="btn btn-primary">Check Answers</button>
+            <div class="reset-btn-wrapper">
+              <button id="resetBtn" class="btn btn-secondary">↺ Reset</button>
+              <div id="resetTooltip" class="reset-tooltip"></div>
+            </div>
+            <div class="icon-btn-wrapper" id="rerollWrapper">
+              <button id="rerollBtn" class="btn btn-secondary reroll-btn" aria-label="Randomize Hints">
+                🎲
+              </button>
+              <span class="icon-btn-tooltip">Randomize Hints</span>
+            </div>
+          </div>
+          <div id="resultMessage" class="result-message" aria-live="polite"></div>
+        </section>
+
+        <aside class="clues-section">
+          <h2><span id="cluesHeader">Clues</span></h2>
+          <div class="clues-list">
+            <div class="clue-group">
+              <h3>Menurun</h3>
+              <div></div>
+            </div>
+            <div class="clue-group">
+              <h3>Mendatar</h3>
+              <div></div>
+            </div>
+          </div>
+        </aside>
+      </main>
+    </div>
+
+  </div><!-- end app-container -->
+
+  <!-- HOME / QUIT CONFIRM MODAL -->
+  <div id="homeConfirmModal" style="display:none;" class="modal-overlay">
+    <div class="modal-content confirm-modal">
+      <button class="modal-close-btn" id="closeHomeConfirmBtn">&#x2715;</button>
+      <h2 class="modal-title"><span id="homeConfirmTitle">Go Home?</span></h2>
+      <p id="homeConfirmDesc">You have an active game. Save your progress before leaving?</p>
+      <div class="confirm-actions">
+        <button id="homeSaveBtn" class="btn btn-primary"><span id="homeSaveBtnLabel">Save &amp; Quit</span></button>
+        <button id="homeNoSaveBtn" class="btn btn-danger"><span id="homeNoSaveBtnLabel">Quit Without Saving</span></button>
+      </div>
+    </div>
+  </div>
+
+  <!-- IN-GAME SETTINGS MODAL -->
+  <div id="inGameSettingsModal" style="display:none;" class="modal-overlay">
+    <div class="modal-content ingame-settings-modal">
+      <button class="modal-close-btn" id="closeInGameSettingsBtn">&#x2715;</button>
+      <h2 class="modal-title">Settings</h2>
+      <div class="ingame-settings-list">
+        <div class="setting-group">
+          <label class="toggle-label">
+            <span>Show black boxes</span>
+            <input type="checkbox" id="ig_showBlockedCells" class="toggle-input">
+            <span class="toggle-track"><span class="toggle-thumb"></span></span>
+          </label>
+        </div>
+        <div class="setting-group">
+          <label class="toggle-label">
+            <span>Show cell borders</span>
+            <input type="checkbox" id="ig_showCellBorders" class="toggle-input">
+            <span class="toggle-track"><span class="toggle-thumb"></span></span>
+          </label>
+        </div>
+        <div class="setting-group">
+          <label class="toggle-label">
+            <span>High contrast</span>
+            <input type="checkbox" id="ig_highContrast" class="toggle-input">
+            <span class="toggle-track"><span class="toggle-thumb"></span></span>
+          </label>
+        </div>
+        <div class="setting-group">
+          <label class="toggle-label">
+            <span>Large clue text</span>
+            <input type="checkbox" id="ig_largeClueText" class="toggle-input">
+            <span class="toggle-track"><span class="toggle-thumb"></span></span>
+          </label>
+        </div>
+        <div class="setting-group">
+          <label class="toggle-label">
+            <span>Reduce animations</span>
+            <input type="checkbox" id="ig_reduceAnimations" class="toggle-input">
+            <span class="toggle-track"><span class="toggle-thumb"></span></span>
+          </label>
+        </div>
+        <div class="setting-group">
+          <label>Cell size:</label>
+          <div class="version-buttons" style="margin-top:8px;">
+            <button class="version-btn" id="ig_cellSizeSmall"><span class="version-label">Small</span></button>
+            <button class="version-btn active" id="ig_cellSizeNormal"><span class="version-label">Normal</span></button>
+            <button class="version-btn" id="ig_cellSizeLarge"><span class="version-label">Large</span></button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- MODIFIER RESTORE CONFIRM MODAL -->
+  <div id="modifierRestoreModal" style="display:none;" class="modal-overlay">
+    <div class="modal-content confirm-modal">
+      <button class="modal-close-btn" id="closeModifierRestoreModal">&#x2715;</button>
+      <h2 class="modal-title" id="modifierRestoreTitle">Reset to Default?</h2>
+      <p id="modifierRestoreBody">This will reset all game settings to default.</p>
+      <div class="confirm-actions">
+        <button id="modifierRestoreConfirm" class="btn btn-primary">Reset</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- MODIFIER CANCEL CONFIRM MODAL -->
+  <div id="modifierCancelModal" style="display:none;" class="modal-overlay">
+    <div class="modal-content confirm-modal">
+      <button class="modal-close-btn" id="closeModifierCancelModal">&#x2715;</button>
+      <h2 class="modal-title"><span id="modifierCancelTitle">Going Back</span></h2>
+      <p id="modifierCancelBody">Quickplay uses Version 1 as default. Saving any changes through this button will apply them in Quickplay.</p>
+      <div class="confirm-actions">
+        <button id="modifierCancelSave" class="btn btn-primary">Save</button>
+        <button id="modifierCancelDiscard" class="btn btn-secondary">Don't Save</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- IN-GAME MENU MODAL -->
+  <div id="gameMenuModal" class="modal-overlay" style="display: none;">
+    <div class="modal-content game-menu">
+      <button class="modal-close-btn" id="closeGameMenuBtn" title="Close">&#x2715;</button>
+      <h2 class="modal-title"><span id="gameMenuTitle">Game Menu</span></h2>
+      <div class="menu-options">
+        <button id="resumeGameBtn" class="btn btn-primary btn-large">Continue</button>
+        <button id="settingsBtn" class="btn btn-secondary btn-large">Settings</button>
+        <button id="quitGameBtn" class="btn btn-danger btn-large">Quit to Main Menu</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- ABORT CONFIRMATION MODAL -->
+  <div id="abortConfirmModal" class="modal-overlay" style="display: none;">
+    <div class="modal-content confirm-modal">
+      <button class="modal-close-btn" id="closeAbortBtn" title="Close">&#x2715;</button>
+      <h2 class="modal-title" id="abortModalTitle">⚠️ Warning</h2>
+      <p id="abortModalBody"><span id="abortConfirmMsg">You are about to quit and return to the Main Menu. All progress will be lost.</span></p>
+      <p id="abortModalConfirm"><strong><span id="abortConfirmQ">Are you sure?</span></strong></p>
+      <div class="confirm-actions">
+        <button id="confirmAbortBtn" class="btn btn-danger">Yes, Quit</button>
+        <button id="cancelAbortBtn" class="btn btn-secondary">Cancel</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- INFO MODAL -->
+  <div id="infoModal" class="modal-overlay" style="display: none;">
+    <div class="modal-content confirm-modal">
+      <button class="modal-close-btn" id="closeInfoBtn" title="Close">&#x2715;</button>
+      <h2 class="modal-title" id="infoModalTitle">Info</h2>
+      <p id="infoModalMessage"></p>
+      <div class="confirm-actions">
+        <button id="infoModalBtn" class="btn btn-primary">Okay</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- CONFIRM ACTION MODAL -->
+  <div id="confirmActionModal" class="modal-overlay" style="display: none;">
+    <div class="modal-content confirm-modal">
+      <button class="modal-close-btn" id="closeConfirmActionBtn" title="Close">&#x2715;</button>
+      <h2 class="modal-title" id="confirmActionTitle">Confirm</h2>
+      <p id="confirmActionMessage"></p>
+      <div class="confirm-actions">
+        <button id="confirmActionYes" class="btn btn-primary">Ya</button>
+        <button id="confirmActionNo" class="btn btn-secondary">Cancel</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- FINAL SCORE MODAL -->
+  <div id="finalScoreModal" class="modal-overlay" style="display: none;">
+    <div class="modal-content final-score-modal">
+      <button class="modal-close-btn" id="closeFinalXBtn" title="Close">&#x2715;</button>
+      <h2 class="modal-title">📊 Final Results</h2>
+      <div id="finalScoreContent"></div>
+      <div class="confirm-actions" style="margin-top: 30px;">
+        <button id="closeFinalBtn" class="btn btn-secondary">Close</button>
+        <button id="backToMenuFromFinalBtn" class="btn btn-danger">Back to Main Menu</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- SCOREBOARD MODAL -->
+  <div id="scoreboardModal" class="modal-overlay" style="display: none;">
+    <div class="modal-content scoreboard-modal">
+      <button class="modal-close-btn" id="closeScoreboardXBtn" title="Close">&#x2715;</button>
+      <h2 class="modal-title">🏆 Scoreboard</h2>
+      <div id="scoreboardContent"></div>
+      <div class="confirm-actions" style="margin-top: 24px;">
+        <button id="clearScoreboardBtn" class="btn btn-danger">Clear All</button>
+        <button id="closeScoreboardBtn" class="btn btn-secondary">Close</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- TUTORIAL MODAL -->
+  <div id="tutorialModal" class="modal-overlay" style="display: none;">
+    <div class="modal-content tutorial-modal">
+      <button class="modal-close-btn" id="closeTutorialXBtn" title="Close">&#x2715;</button>
+      <h2 class="modal-title">Tutorial</h2>
+
+      <!-- PAGE 1: Navigation -->
+      <div class="tutorial-page" id="tutPage1">
+        <h3 class="tutorial-page-title">Navigasi</h3>
+        <p class="tutorial-page-desc">Use the keyboard to navigate and type your answers.</p>
+        <div class="tutorial-grid-demo" style="position:relative">
+          <div class="tg-row" id="tutAnim1">
+            <div class="tg-cell" id="ta1c0"></div>
+            <div class="tg-cell" id="ta1c1"></div>
+            <div class="tg-cell" id="ta1c2"></div>
+            <div class="tg-cell" id="ta1c3"></div>
+            <div class="tg-cell" id="ta1c4"></div>
+          </div>
+          <div class="tg-row">
+            <div class="tg-cell tg-blocked"></div>
+            <div class="tg-cell tg-blocked"></div>
+            <div class="tg-cell tg-blocked"></div>
+            <div class="tg-cell tg-blocked"></div>
+            <div class="tg-cell" id="ta1d1"></div>
+          </div>
+          <div class="tg-row">
+            <div class="tg-cell tg-blocked"></div>
+            <div class="tg-cell tg-blocked"></div>
+            <div class="tg-cell tg-blocked"></div>
+            <div class="tg-cell tg-blocked"></div>
+            <div class="tg-cell" id="ta1d2"></div>
+          </div>
+          <div class="tg-row">
+            <div class="tg-cell tg-blocked"></div>
+            <div class="tg-cell tg-blocked"></div>
+            <div class="tg-cell tg-blocked"></div>
+            <div class="tg-cell tg-blocked"></div>
+            <div class="tg-cell" id="ta1d3"></div>
+          </div>
+          <div id="ta1ArrowKey" class="tut-arrow-key" style="display:none">
+            <svg width="10" height="12" viewBox="0 0 10 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M5 1V10M5 10L1.5 6.5M5 10L8.5 6.5" stroke="#333" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>
+          </div>
+        </div>
+        <div class="tutorial-keys">
+          <div class="tutorial-key-row">
+            <span class="tkey">← → ↑ ↓</span>
+            <span class="tkey-desc">Move to next cell</span>
+          </div>
+          <div class="tutorial-key-row">
+            <span class="tkey">Spacebar</span>
+            <span class="tkey-desc">Skip to next cell in current direction</span>
+          </div>
+          <div class="tutorial-key-row">
+            <span class="tkey">Backspace</span>
+          </div>
+          <div class="tutorial-key-row">
+            <span class="tkey">A–Z</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- PAGE 2: Hints -->
+      <div class="tutorial-page" id="tutPage2">
+        <h3 class="tutorial-page-title">Hints</h3>
+        <p class="tutorial-page-desc">Some cells have hints — pre-filled letters to help you.</p>
+        <div class="tutorial-grid-demo">
+          <div class="tg-row" id="tutAnim2">
+            <div class="tg-cell" id="ta2c0"></div>
+            <div class="tg-cell" id="ta2c1"></div>
+            <div class="tg-hint-wrap" id="ta2c2wrap">
+              <div class="tg-cell tg-hint" id="ta2c2">L</div>
+              <span class="tg-corner-bl"></span>
+              <span class="tg-corner-br"></span>
+            </div>
+            <div class="tg-cell" id="ta2c3"></div>
+            <div class="tg-cell" id="ta2c4"></div>
+          </div>
+        </div>
+        <div class="tutorial-legend">
+          <div class="tutorial-legend-row">
+            <div class="tg-hint-wrap" style="flex-shrink:0">
+              <div class="tg-cell tg-hint" style="width:32px;height:32px;font-size:13px">L</div>
+              <span class="tg-corner-bl"></span>
+              <span class="tg-corner-br"></span>
+            </div>
+            <span>Hint cell — cursor can enter but the letter <strong>cannot be deleted</strong>.</span>
+          </div>
+          <div class="tutorial-legend-row">
+            <div class="tg-cell" style="width:32px;height:32px;font-size:13px;flex-shrink:0"></div>
+            <span>Empty cell — type your answer here.</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- PAGE 3: Semak -->
+      <div class="tutorial-page" id="tutPage3">
+        <h3 class="tutorial-page-title">Check Answers</h3>
+        <p class="tutorial-page-desc">Press <strong>Check Answers</strong> to check. Each cell will be coloured.</p>
+        <div class="tutorial-btn-demo" style="margin-bottom:10px;position:relative">
+          <button id="tutSemakBtn" class="btn btn-primary" style="pointer-events:none">Check Answers</button>
+          <div id="tutMouseCursor" class="tut-mouse-cursor" style="opacity:0;transform:translate(80px,8px)">
+            <svg width="18" height="24" viewBox="0 0 18 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M2 2L2 18L6 14L9 21L11 20L8 13L14 13L2 2Z" fill="white" stroke="#333" stroke-width="1.5" stroke-linejoin="round"/>
+            </svg>
+          </div>
+        </div>
+        <div class="tutorial-grid-demo">
+          <div class="tg-row">
+            <div class="tg-cell" id="ta3c0">K</div>
+            <div class="tg-hint-wrap">
+              <div class="tg-cell tg-hint" id="ta3c1">U</div>
+              <span class="tg-corner-bl"></span>
+              <span class="tg-corner-br"></span>
+            </div>
+            <div class="tg-cell" id="ta3c2">L</div>
+            <div class="tg-cell" id="ta3c3">X</div>
+            <div class="tg-cell" id="ta3c4"></div>
+          </div>
+        </div>
+        <div class="tutorial-legend">
+          <div class="tutorial-legend-row">
+            <div class="tg-cell tg-correct" style="width:32px;height:32px;font-size:13px;flex-shrink:0">K</div>
+            <span>Hijau — jawapan betul.</span>
+          </div>
+          <div class="tutorial-legend-row">
+            <div class="tg-cell tg-wrong" style="width:32px;height:32px;font-size:13px;flex-shrink:0">X</div>
+            <span>Merah — jawapan salah.</span>
+          </div>
+          <div class="tutorial-legend-row">
+            <div class="tg-cell tg-empty" style="width:32px;height:32px;font-size:13px;flex-shrink:0">&#8203;</div>
+            <span>Yellow — cell is still empty.</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- PAGE 4: Hantar & Skor -->
+      <div class="tutorial-page" id="tutPage4">
+        <h3 class="tutorial-page-title">Menghantar &amp; Skor</h3>
+
+        <p class="tutorial-page-desc">When done, return to the selector and press:</p>
+        <div class="tutorial-btn-demo">
+          <button class="btn btn-primary" style="pointer-events:none">Hantar Semua</button>
+        </div>
+
+        <div class="tutorial-info-row">
+          <p class="tutorial-page-desc">Reset akan memakan peluang (attempts) / lifepoint:</p>
+          <div class="tutorial-btn-demo">
+            <button class="btn btn-secondary" style="pointer-events:none">↺ Reset</button>
+          </div>
+        </div>
+
+        <div class="tutorial-info-row">
+          <p class="tutorial-page-desc">Satu crossword mempunyai 100 mata, keseluruhan adalah 600. Skor akhir akan direkod di dalam:</p>
+          <div class="tutorial-btn-demo">
+            <button class="btn btn-secondary" style="pointer-events:none">Scoreboard</button>
+          </div>
+        </div>
+
+      </div>
+
+      <!-- PAGE 5: Settings -->
+      <div class="tutorial-page" id="tutPage5">
+        <h3 class="tutorial-page-title">Settings &amp; Modifiers</h3>
+        <p class="tutorial-page-desc">Settings and modifiers can be configured in:</p>
+        <div class="tutorial-btn-demo">
+          <button class="btn btn-primary" style="pointer-events:none">Play</button>
+        </div>
+        <div class="tutorial-version-cards" style="margin-top:14px">
+          <div class="tutorial-score-grid">
+            <div class="tutorial-score-card">
+              <div class="tutorial-score-label">Version 1</div>
+              <div class="tutorial-score-val">❤️ × 8</div>
+              <div class="tutorial-score-sub">Skor sahaja</div>
+            </div>
+            <div class="tutorial-score-card">
+              <div class="tutorial-score-label">Version 2</div>
+              <div class="tutorial-score-val">❤️ × 5</div>
+              <div class="tutorial-score-sub">Menang / Kalah</div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- NAV DOTS + BUTTONS -->
+      <div class="tutorial-nav">
+        <div class="tutorial-dots">
+          <span class="tutorial-dot tutorial-dot--active" data-page="1"></span>
+          <span class="tutorial-dot" data-page="2"></span>
+          <span class="tutorial-dot" data-page="3"></span>
+          <span class="tutorial-dot" data-page="4"></span>
+          <span class="tutorial-dot" data-page="5"></span>
+        </div>
+        <div class="tutorial-btns">
+          <button id="tutPrevBtn" class="btn btn-secondary"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M15 18L9 12L15 6" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/></svg> Back</button>
+          <button id="tutNextBtn" class="btn btn-primary">Next <svg width="16" height="16" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M9 6l6 6-6 6" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/></svg></button>
+          <button id="tutCloseBtn" class="btn btn-primary">Faham!</button>
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
